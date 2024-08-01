@@ -60,7 +60,8 @@ Usage
 ./BaRecon.sh -h
 ```
 
-<img src="https://github.com/user-attachments/assets/39635a64-5413-45d9-bf19-c1ab3e717b9a" style="width: 100%; height: auto;" />
+
+<img src="https://github.com/user-attachments/assets/535a8c8d-f543-466a-918c-b68bfdf52580" style="width: 100%; height: auto;" />
 
 
 #### Scanning a network block
