@@ -43,8 +43,15 @@ function checkDependencies(){
     if ! command -v $program &> /dev/null
      then
       echo -e "Installing ${turquoiseColour}$program...${endColour}"
-      apt-get install -y $program > /dev/null 2>&1
-      echo -e "${greenColour}[OK] $program installed.${endColour}"
+      output=$(apt-get install -y $program 2>&1)
+      
+      if echo "$output" | grep -q -i "Unable to locate package"
+       then
+        echo -e "${redColour}[Error] $program not installed. Please install it manually.${endColour}"
+        exit 1 # Exit with error
+       else
+        echo -e "${greenColour}[OK] $program installed.${endColour}"
+      fi
     fi
   done
   
