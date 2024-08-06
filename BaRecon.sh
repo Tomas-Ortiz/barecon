@@ -196,7 +196,7 @@ function getNetworkDetails(){
  networkOwner=$(whois $ipAdd 2>/dev/null | grep -i -m 1 -E '^(owner|OrgName|descr):' | awk -F': ' '{gsub(/^ +/, "", $2); print $2}')
  country=$(whois $ipAdd 2>/dev/null | grep -i -m 1 '^country:' | awk -F': ' '{gsub(/^ +/, "", $2); print $2}')
  pingResponse=$(ping -c 1 -W 1 $ipAdd >/dev/null 2>&1 && echo "Ok" || echo "Error")
- ports=$(naabu -host $ipAdd -rate 100 2>/dev/null | awk -F: '{print $2}' | sort -n | tr '\n' ', ' | sed 's/,$//')
+ ports=$(naabu -host $ipAdd -rate 200 2>/dev/null | awk -F: '{print $2}' | sort -n | tr '\n' ', ' | sed 's/,$//')
  
  [ -z "$networkOwner" ] && networkOwner="-"
  [ -z "$country" ] && country="-"
