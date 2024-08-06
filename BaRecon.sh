@@ -47,7 +47,7 @@ function checkDependencies(){
       
       if echo "$output" | grep -q -i "Unable to locate package"
        then
-        echo -e "${redColour}[Error] $program not installed. Please install it manually.${endColour}"
+        echo -e "${redColour}[Error] $program not installed. Please install it manually.${endColour}\n"
         exit 1 # Exit with error
        else
         echo -e "${greenColour}[OK] $program installed.${endColour}"
@@ -310,7 +310,7 @@ do
 done
 else
  title
- echo -e "\n${redColour}Error: You need root permissions.${endColour}"
+ echo -e "\n${redColour}Error: You need root permissions.${endColour}\n"
  exit 1 # Exit with error
 fi
 
