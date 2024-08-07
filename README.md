@@ -79,7 +79,7 @@ Usage
 <img src="https://github.com/user-attachments/assets/f51ffb6a-07da-4725-a50c-355e2c23ea2a" style="width: 100%; height: auto;" />
 
 
-#### Scanning a domain and all its subdomains
+#### Scanning a domain and its subdomains
 
 ```bash
 ./BasicRecon.sh -d <DOMAIN>
