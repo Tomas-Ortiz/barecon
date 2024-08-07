@@ -13,7 +13,7 @@ function helpPanel(){
  title
  echo -e "\nBaRecon is a tool that performs basic reconnaissance on a network block, a domain and its subdomains, or a single IP address."
  echo -e "\nUsage:"
- echo -e "./BasicRecon.sh -d ${purpleColour}<DOMAIN>${endColour}\tScan a domain and all its subdomains (e.g. example.com)"
+ echo -e "./BasicRecon.sh -d ${purpleColour}<DOMAIN>${endColour}\tScan a domain and its subdomains (e.g. example.com)"
  echo -e "./BasicRecon.sh -n ${purpleColour}<CIDR>${endColour}\tScan a network block (e.g. 10.10.10.0/24)"
  echo -e "./BasicRecon.sh -a ${purpleColour}<IP>${endColour}\t\tScan a single IP (e.g. 10.10.10.10)"
  echo -e "./BasicRecon.sh -h\t\tHelp panel"
