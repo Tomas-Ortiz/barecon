@@ -271,10 +271,10 @@ do
      exit 1 # Exit with error
     fi
     
-    if [ $mask -lt 8 ] || [ $mask -gt 32 ]
+    if [ $mask -lt 24 ] || [ $mask -gt 32 ]
     then
      title
-     echo -e "\n${redColour}Error: Mask not allowed, must be between /8 and /32.${endColour}"
+     echo -e "\n${redColour}Error: Mask not allowed, must be between /24 and /32.${endColour}"
      exit 1 # Exit with error
     fi
     
