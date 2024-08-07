@@ -63,7 +63,7 @@ Usage
 ```
 
 
-<img src="https://github.com/user-attachments/assets/535a8c8d-f543-466a-918c-b68bfdf52580" style="width: 100%; height: auto;" />
+<img src="https://github.com/user-attachments/assets/7d9a8469-afd4-4fe3-830d-ab7a3438d58d" style="width: 100%; height: auto;" />
 
 
 #### Scanning a network block
