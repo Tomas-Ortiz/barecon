@@ -1,7 +1,9 @@
 # BaRecon
 BaRecon is a Bash-based tool that performs basic reconnaissance on a network block, a domain and its subdomains, or a single IP address.
 
-All dependencies are automatically installed when the tool is executed. Root permissions are required to use the tool.
+All dependencies are automatically installed when the tool is executed.
+
+Root permissions are required to use the tool.
 
 Features
 ---
